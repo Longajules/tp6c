@@ -6,7 +6,7 @@ int multipledetrois(int a) //permet de determiner si un nombre est un multiple d
 	
 	result = a % 3;
 
-	return result == 0;
+	return result;
 }
 
 int multiplededeux(int a) //permet de determiner si un nombre est un multiple de 2.
@@ -18,31 +18,42 @@ int multiplededeux(int a) //permet de determiner si un nombre est un multiple de
 	return result;
 }
 
+int multipledesix(int a) //permet de determiner si un nombre est un multiple de 6.
+{
+	int result = 0;
+
+	result = a % 6;
+		
+	return result;
+}
+
 int main()
 {
 	int a = 0;
 	int resultat = 0;
 
+	printf("Entrez un nombre entier :\n ");
 	scanf_s("%d", &a);
 
-	resultat = multipledetrois(a);
-
-	if (resultat == 0)
+	resultat = multipledesix(a);
+	
+	if (resultat == 0 || resultat == 3)
 	{
-		printf("Le nombre est un multiple de 3.");
-	}
-	else if (resultat != 0)
-	{
-		resultat = multiplededeux(a);
-	}
-	else if (resultat == 0)
-	{
-		printf("Le nombre est un multiple de 2.");
+		printf("Le nombre %d est un multiple de 6.\n", a);
 	}
 	else
 	{
-		printf("Le nombre n'est pas un multiple de 2 ou de 3.");
+		resultat = multiplededeux(a);
 	}
-	
+
+	if (resultat == 0)
+	{
+		printf("Le nombre %d est un multiple de 2.\n", a);
+	}
+	else
+	{
+		printf("Le nombre %d n'est pas un multiple de 2 ni un multiple de 3.\n", a);
+	}
+
 	return 0;
 }

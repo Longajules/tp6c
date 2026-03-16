@@ -1,20 +1,31 @@
-// exercice2.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
-//
-
 #include <iostream>
+#include <conio.h>
+
+void mot_de_passe(char tab[200])
+{
+    char c;
+    int i = 0;
+
+    do
+    {
+        c = _getch();        // lit un caractère sans l'afficher
+        if (c != 13)         // si ce n'est pas Entrée
+        {
+            printf("*");     // affiche une étoile
+            tab[i++] = c;    // stocke le caractère
+        }
+    } while (c != 13);         // boucle jusqu'à Entrée
+
+    tab[i] = '\0';           // FIN DE CHAÎNE OBLIGATOIRE
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    char tab[200];
+
+    mot_de_passe(tab);   // ✔️ on passe le tableau correctement
+
+    printf("\nLe mot de passe est : %s\n", tab);
+
+    return 0;
 }
-
-// Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
-// Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
-
-// Astuces pour bien démarrer : 
-//   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
-//   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
-//   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
-//   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
-//   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
-//   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.

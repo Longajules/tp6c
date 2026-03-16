@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="exercice1\exercice1.cpp" />
+    <ClCompile Include="exercice2\exercice2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />

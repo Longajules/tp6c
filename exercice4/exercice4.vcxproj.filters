@@ -15,19 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include=".gitattributes" />
-    <None Include=".gitignore" />
-    <None Include="tp6c++.slnx" />
-    <None Include="exercice3\exercice3.slnx" />
-    <None Include="exercice4\exercice4.slnx" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="exercice3\exercice3.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="exercice4\exercice4.cpp">
+    <ClCompile Include="exercice4.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

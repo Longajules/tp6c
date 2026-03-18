@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{58195d96-1653-4d8b-a650-9bde5f69df48}</ProjectGuid>
-    <RootNamespace>tp6c</RootNamespace>
+    <ProjectGuid>{6b28257d-2ba4-4f86-898a-1aebca2c99a5}</ProjectGuid>
+    <RootNamespace>exercice4</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,17 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include=".gitattributes" />
-    <None Include=".gitignore" />
-    <None Include="exercice3\exercice3.slnx" />
-    <None Include="exercice4\exercice4.slnx" />
-    <None Include="tp6c++.slnx" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="exercice3\exercice3.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="exercice4\exercice4.cpp" />
+    <ClCompile Include="exercice4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

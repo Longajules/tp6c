@@ -127,12 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="exercice2\exercice2.cpp" />
+    <ClCompile Include="exercice3\exercice3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
+    <None Include="exercice3\exercice3.slnx" />
     <None Include="tp6c++.slnx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="exercice3\exercice3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -23,7 +23,7 @@ int main()
 {
     char tab[200];
 
-    mot_de_passe(tab);   // ✔️ on passe le tableau correctement
+    mot_de_passe(tab);   //on passe le tableau correctement
 
     printf("\nLe mot de passe est : %s\n", tab);
 
